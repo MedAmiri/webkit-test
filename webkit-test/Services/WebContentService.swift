@@ -1,7 +1,7 @@
 import Foundation
 
 class WebContentService {
-    private let endpoint = URL(string: "https://souscription-qlf.oney.fr/scoach-merchant-web/#/dispatch/6370b780-f853-4c5f-9d83-98678c237e37")!
+    private let endpoint = URL(string: "")!
 
     func fetchURL(completion: @escaping (Result<URL, Error>) -> Void) {
         URLSession.shared.dataTask(with: endpoint) { data, response, error in
