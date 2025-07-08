@@ -7,7 +7,7 @@ class WebContentViewModel: ObservableObject {
     @Published var errorMessage: String? = nil
 
     private let service = WebContentService()
-    private let fallbackURL = URL(string:"https://souscription-qlf.oney.fr/scoach-merchant-web/#/dispatch/c9a5c18e-3269-4af2-ae26-8e470b2ab1f3")!
+    private let fallbackURL = URL(string:"")!
     func loadContent() {
         isLoading = true
         errorMessage = nil
